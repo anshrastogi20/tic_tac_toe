@@ -32,6 +32,7 @@ class FirstScreenState extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.orangeAccent,
         body: Column(
           children: <Widget>[
             Expanded(
@@ -46,11 +47,12 @@ class FirstScreenState extends State<FirstScreen> {
                     children: List.generate(9, (index) {
                       return Center(
                         child: RaisedButton(
-                          // elevation: 5.0,
+                            //elevation: 5.0,
                             onPressed: () {
                               action(index);
                             },
                             child: Container(
+                              //margin: EdgeInsets.all(4.0),
                               child: Center(
                                 child: Text(
                                     value[index],
@@ -76,12 +78,12 @@ class FirstScreenState extends State<FirstScreen> {
                   children: <Widget> [
                     RaisedButton(
                       color: Colors.red,
-                      textColor: Colors.white,
+                      //textColor: Colors.white,
                       elevation: 10.0,
                       child: Text(
                         "Reset",
                         style: TextStyle(
-                          fontSize: 20.0,
+                          fontSize: 30.0,
                           color: Colors.white,
                         ),
                       ),
