@@ -37,13 +37,13 @@ class FirstScreenState extends State<FirstScreen> {
           children: <Widget>[
             Expanded(
                 child: Container(
-                  padding: const EdgeInsets.all(20.0),
-                  //decoration: BoxDecoration(
-                  //border: Border.symmetric(color: Colors.black)
-                  width: 350.0,
-                  height: 350.0,
+                  padding: const EdgeInsets.all(50.0),
+                  width: 300.0,
+                  height: 300.0,
                   child: GridView.count(
                     crossAxisCount: 3,
+                    crossAxisSpacing: 5,
+                    mainAxisSpacing: 5,
                     children: List.generate(9, (index) {
                       return Center(
                         child: RaisedButton(
